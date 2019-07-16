@@ -1,185 +1,152 @@
-body{
-    font-family: Arial, Arial, Helvetica, sans-serif;
-    font-size:  15px;
-    line-height: 1.5;
+*{
     padding: 0;
     margin: 0;
-    background-color:  #000000;
-    color: #ffffff;
+    box-sizing: border-box;
 }
 
-.container{
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+body{
+    font-family: 'Dosis', sans-serif;
+    background-color: #ffffff;
+    color: black;
 }
 
 header{
     position: sticky;
-    top: 0;
-    background:#000000;
-    color: #ffffff;
-    padding-top: 30px;
-    min-height:80px;
-    border-bottom: #ff0000 3px solid;
+    top:0;
+    height:20px;
 }
-header .container{
-    display:flex;
-}
+
 header #branding{
+    height:40px;   
     width:100%;
-}
- 
-header #branding h1 {
-    margin:0;
-    padding:0;
-}
-
-header a{
-    color:#ffffff;
-    text-decoration:none;
-    text-transform:uppercase;
-    font-size:16px; 
-    font-weight:bold;
-}
-header nav{
-    display:flex;
-    width:100%;
-    justify-content: flex-end;
-}
-
-header ul {
-    display: flex;
-    margin:0;
-    list-style: none;
-    line-height: 1;
-    align-items: center;
-    
-}
-
-header li{
-    padding: 0 20px;
-}
-
-header .current a, header .highlight {
-    color: #ff0000;
-    font-weight: bold;
-}
-
-header a:hover {
-    color: #ff0000;
-
-}
-
-#showcase{
-    min-height: 400px;
-    background:url(../images/apple-black-and-white-black-and-white-169573.jpg) no-repeat 0 -330px ;
-    color: #ffffff;
-    text-align: center; 
-}
-
-#showcase h1{
-    margin-top: 100px;
-    font-size: 75px;
-    margin-bottom:10px;
-}
-
-#showcase p{
+    background-color: aliceblue;
+    color:black;
+    text-align: center;    
     font-size: 20px;
 }
 
-#Contact{
-    border-top: #ff0000 3px solid;
-    border-bottom: #ff0000 3px solid;
-    padding:15px;
-    background-color: #696969;
+.logo h1{
+    padding:30px;
+    font-size: 70px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom:50px;   
 }
 
-#Contact .container {
-    display: flex;
-    width:90%;
-}
-
-
-form {
-    box-sizing:border-box;
-    width:30%;
-    margin: 10px 0 0 170px;
-}
-
-#Contact form * {
+.navigation{
     display:flex;
-    margin-bottom: 4px;
+    list-style: none;
+    padding-bottom:10px;
+    border-bottom: 1px solid black;
+ 
 }
-
-form input[type="email"] {
-    width:120px;
+.navigation li{
+    flex-grow: 1;
+    text-align:center;
+    font-size: 25px;   
 }
-
-
-#Contact form .btn {
- height: 25px;
- width: 100px;
- background: #ff0000;
- border: 0;
- color: #ffffff;
- font-weight: bold;
- justify-content: center;
- border-radius: 2px;
- text-transform: uppercase;
- margin-top:5px;
-}
-
-#port-slider{
-    color: #000000;
-    padding-top:20px;
-    background: #fefefe;
-}
-
-#port-slider .container{
-   text-align: center;
-}
-
-#port-slider h1{
-    font-size: 50px;
+   
+.navigation li a{
+    color:black;
+    text-decoration: none;
     text-transform: uppercase;
-    margin: 0 0 20px 0;
-    padding:0;
+}
+
+.navigation li a:hover{
+text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px) {
+    .navigation{
+    display: block;
+    }
+
+    .navigation li{
+        margin:10px;
+        padding:10px;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    .navigation li:hover{
+        background-color :rgba(0,0,0,0.1); 
+    }
+}
+
+#showcase{
+    min-height: 200px;
+    background:url(../images/stickfigure.jpeg) no-repeat left bottom  ;
+    color: #000000;
+    text-align:center;
+}
+@media only screen and (max-width: 800px) {
+    #showcase{
+        border-bottom:1px solid black;
+    }
+}
+
+#showcase p{
+    margin:80px;
+    font-size: 40px;  
+}
+
+.port-slider .container{
+   overflow: scroll;
+   display:flex;
+}
+
+.port-slider p{
+    margin-top:20px;
+    margin-bottom:20px;
+    text-align:center;
+    font-size:40px;
 }
 
 .project{
-    width:30%;
-    overflow: hidden;
+    margin:20px; 
     display:inline-block;
     color: #000000;
+    text-align:center;
+    background:aliceblue;
+    border-radius:4px;
+    font-size:25px;
 }
+
 .project img{
- width: 110px;
- border-radius: 2px;
+    margin:20px;
+    width: 300px;
+    border-radius: 6px;
 }
 
 .project a {
     text-decoration: none;
- color: #ff0000;
- text-transform: uppercase;
+    color: #887f7f;
+    font-weight:normal;
+ 
+}
+.project p{
+    font-size:20px;
 }
 
 .project a:hover {
- color: #000000;
+    color: #000000;
+    text-decoration: underline;
 }
 
 footer {
-    background-color: #0f9d58;
+    background-color: #238555;
+    padding:2px;
     position: sticky;
     bottom: 0;
-    border-top: #000000 3px solid;
-
+    height:25px;
 }
 
-footer li {
-    display: inline;
-    margin: 0 20px;
-}
+footer ul {
+    display:flex;
+    }
+    footer li{
+        flex-grow: 1;
+    }
 footer a:hover {
     color: #000000;
 }
@@ -194,10 +161,21 @@ footer a{
     color:#ffffff;
     
 }
-
-
+.hamburger {
+    display:none;
+}
+@media only screen and (max-width: 800px) {
+    .hamburger {
+        display:block;
+       margin-left: 20px;
+       font-size:30px;
+    }}
+.none{
+    display:none;
+}
+/*  */
 #about-ppl img{
-    height:400px;
+    height:600px;
     border: #ff0000 3px solid;
     margin-top:40px;
 
@@ -212,3 +190,4 @@ footer a{
  text-align: center;
  font-size: 100px;
 }
+
