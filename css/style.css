@@ -110,6 +110,7 @@ text-decoration: underline;
     background:aliceblue;
     border-radius:4px;
     font-size:25px;
+    width: 30%;
 }
 
 .project img{
