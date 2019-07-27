@@ -9,7 +9,7 @@ body {
   font-family: 'Dosis', sans-serif;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #FFFFDE;
+  color: white;
 }
 
 header {
@@ -30,7 +30,7 @@ header {
 footer {
   min-height: 200px;
   height: 100%;
-  color: #FFFFDE;
+  color: white;
   text-align: center;
 }
 
@@ -45,7 +45,7 @@ footer {
 }
 
 .links {
-  color: #FFFFDE;
+  color: rgb(246, 246, 225);
   text-decoration: underline;
 }
 
