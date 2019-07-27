@@ -26,7 +26,7 @@ header {
   margin-bottom: 50px;
 }
 
-#showcase,
+.showcase,
 footer {
   min-height: 200px;
   height: 100%;
@@ -34,7 +34,7 @@ footer {
   text-align: center;
 }
 
-#showcase p,
+.showcase p,
 footer {
   margin: 80px;
   font-size: 40px;
@@ -50,7 +50,7 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
-  #showcase {
+  .showcase {
     border-bottom: 1px solid #FFFFDE;
   }
 }
