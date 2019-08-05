@@ -8,8 +8,17 @@ body{
     font-family: 'Dosis', sans-serif;
     background-color: #ffffff;
     color: black;
+    
+    
 }
 
+.main{
+    text-align: center;
+    width:80vw;
+    /* overflow: scroll; */
+    margin:auto;
+    width:100%;
+}
 header{
     position: sticky;
     top:0;
@@ -26,6 +35,7 @@ header #branding{
 }
 
 .logo h1{
+    
     padding:30px;
     font-size: 70px;
     font-weight: lighter;
@@ -111,7 +121,7 @@ text-decoration: underline;
     background:aliceblue;
     border-radius:4px;
     font-size:25px;
-    min-width:230px;
+    
    
     overflow:hidden;
 }
@@ -171,12 +181,23 @@ footer a{
     display:none;
 }
 @media only screen and (max-width: 800px) {
-    .hamburger {
+
+    body{
+        margin:0;
+        padding:0;
+        text-align: justify;
+    }
+    
+    /* .hamburger {
         display:block;
        margin-left: 20px;
        font-size:30px;
        
+    } */
+    .port-slider .container{
+        flex-direction:column;
     }
+
     
 }
 .none{
