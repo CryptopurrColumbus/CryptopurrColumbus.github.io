@@ -1,223 +1,207 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Dosis', sans-serif;
-    background-color: #ffffff;
-    color: black;
-    
-    
+body {
+  font-family: 'Dosis', sans-serif;
+  background-color: #ffffff;
+  color: black;
 }
 
-.main{
-    text-align: center;
-    width:80vw;
-    /* overflow: scroll; */
-    margin:auto;
-    width:100%;
+.main {
+  text-align: center;
+  width: 80vw;
+  /* overflow: scroll; */
+  margin: auto;
+  width: 100%;
 }
-header{
-    position: sticky;
-    top:0;
-    height:20px;
-}
-
-header #branding{
-    height:40px;   
-    width:100%;
-    background-color: aliceblue;
-    color:black;
-    text-align: center;    
-    font-size: 20px;
+header {
+  position: sticky;
+  top: 0;
+  height: 20px;
 }
 
-.logo h1{
-    
-    padding:30px;
-    font-size: 70px;
-    font-weight: lighter;
-    text-align: center;
-    margin-bottom:50px;   
+header #branding {
+  height: 40px;
+  width: 100%;
+  background-color: aliceblue;
+  color: black;
+  text-align: center;
+  font-size: 20px;
 }
 
-.navigation{
-    display:flex;
-    list-style: none;
-    padding-bottom:10px;
-    border-bottom: 1px solid black;
- 
-}
-.navigation li{
-    flex-grow: 1;
-    text-align:center;
-    font-size: 25px;   
-}
-   
-.navigation li a{
-    color:black;
-    text-decoration: none;
-    text-transform: uppercase;
+.logo h1 {
+  padding: 30px;
+  font-size: 70px;
+  font-weight: lighter;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.navigation li a:hover{
-text-decoration: underline;
+.navigation {
+  display: flex;
+  list-style: none;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+.navigation li {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 25px;
 }
 
-@media only screen and (max-width: 800px) {
-    .navigation{
-    display: block;
-    }
-
-    .navigation li{
-        margin:10px;
-        padding:10px;
-        border: 1px solid black;
-        border-radius: 3px;
-    }
-
-    .navigation li:hover{
-        background-color :rgba(0,0,0,0.1); 
-    }
+.navigation li a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-#showcase{
-    min-height: 200px;
-    background:url(../images/stickfigure.jpeg) no-repeat left bottom  ;
-   
-    color:green;
-    text-align:center;
-}
-@media only screen and (max-width: 800px) {
-    #showcase{
-        border-bottom:1px solid black;
-    }
+.navigation li a:hover {
+  text-decoration: underline;
 }
 
-#showcase p{
-    margin:80px;
-    font-size: 40px;  
+.showcase {
+  min-height: 200px;
+  background: url(../images/stickfigure.jpeg) no-repeat left bottom;
+
+  color: green;
+  text-align: center;
 }
 
-.port-slider .container{
-   overflow: scroll;
-   display:flex;
+.showcase p {
+  margin: 80px;
+  font-size: 40px;
 }
 
-.port-slider p{
-    margin-top:20px;
-    margin-bottom:20px;
-    text-align:center;
-    font-size:40px;
+.port-slider .container {
+  overflow: scroll;
+  display: flex;
 }
 
-.project{
-    margin:20px; 
-    display:inline-block;
-    color: #000000;
-    text-align:center;
-    background:aliceblue;
-    border-radius:4px;
-    font-size:25px;
-    
-   
-    overflow:hidden;
+.port-slider p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 40px;
 }
 
-.project img{
-    margin: 20px 0;
-    width: 300px;
-    border-radius: 6px;
-    width:100%;
-    
+.project {
+  margin: 20px;
+  display: inline-block;
+  color: #000000;
+  text-align: center;
+  background: aliceblue;
+  border-radius: 4px;
+  font-size: 25px;
+  overflow: hidden;
+}
+
+.project img {
+  margin: 20px 0;
+  width: 300px;
+  border-radius: 6px;
+  width: 100%;
 }
 
 .project a {
-    text-decoration: none;
-    color: #887f7f;
-    font-weight:normal;
- 
+  text-decoration: none;
+  color: #887f7f;
+  font-weight: normal;
 }
-.project p{
-    font-size:20px;
+.project p {
+  font-size: 20px;
 }
 
 .project a:hover {
-    color: #000000;
-    text-decoration: underline;
+  color: #000000;
+  text-decoration: underline;
 }
 
 footer {
-    background-color: #238555;
-    padding:2px;
-    position: sticky;
-    bottom: 0;
-    height:25px;
+  background-color: #238555;
+  padding: 2px;
+  position: sticky;
+  bottom: 0;
+  height: 25px;
 }
 
 footer ul {
-    display:flex;
-    }
-    footer li{
-        flex-grow: 1;
-    }
+  display: flex;
+}
+footer li {
+  flex-grow: 1;
+}
 footer a:hover {
-    color: #000000;
+  color: #000000;
 }
 footer ul {
-    text-align: center;
-    list-style:none;
-    text-transform: capitalize;
-    
+  text-align: center;
+  list-style: none;
+  text-transform: capitalize;
 }
-footer a{
-    text-decoration: none;
-    color:#ffffff;
-    
+footer a {
+  text-decoration: none;
+  color: #ffffff;
 }
 .hamburger {
-    display:none;
+  display: none;
 }
-@media only screen and (max-width: 800px) {
 
-    body{
-        margin:0;
-        padding:0;
-        text-align: justify;
-    }
-    
-    /* .hamburger {
-        display:block;
-       margin-left: 20px;
-       font-size:30px;
-       
-    } */
-    .port-slider .container{
-        flex-direction:column;
-    }
-
-    
-}
-.none{
-    display:none;
+.none {
+  display: none;
 }
 /*  */
-#about-ppl img{
-    height:600px;
-    border: #ff0000 3px solid;
-    margin-top:40px;
-
+#about-ppl img {
+  height: 600px;
+  border: #ff0000 3px solid;
+  margin-top: 40px;
 }
 
 #about-ppl .container {
   text-align: center;
 }
 
-
-#skilled{
- text-align: center;
- font-size: 100px;
+#skilled {
+  text-align: center;
+  font-size: 100px;
 }
 
+@media only screen and (max-width: 800px) {
+  body {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+  }
+
+  .port-slider .container {
+    flex-direction: column;
+  }
+  .showcase {
+    border-bottom: 1px solid black;
+  }
+
+  .navigation {
+    display: block;
+  }
+
+  .navigation li {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+
+  .navigation li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .logo h1 {
+    font-size: 30px;
+  }
+
+  .container p {
+    font-size: 28px;
+  }
+}
