@@ -76,7 +76,8 @@ text-decoration: underline;
 #showcase{
     min-height: 200px;
     background:url(../images/stickfigure.jpeg) no-repeat left bottom  ;
-    color: #000000;
+   
+    color:green;
     text-align:center;
 }
 @media only screen and (max-width: 800px) {
@@ -110,13 +111,17 @@ text-decoration: underline;
     background:aliceblue;
     border-radius:4px;
     font-size:25px;
-    width: 30%;
+    min-width:230px;
+   
+    overflow:hidden;
 }
 
 .project img{
-    margin:20px;
+    margin: 20px 0;
     width: 300px;
     border-radius: 6px;
+    width:100%;
+    
 }
 
 .project a {
@@ -170,7 +175,10 @@ footer a{
         display:block;
        margin-left: 20px;
        font-size:30px;
-    }}
+       
+    }
+    
+}
 .none{
     display:none;
 }
