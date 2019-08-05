@@ -76,7 +76,6 @@ header #branding {
 }
 
 .port-slider .container {
-  overflow: scroll;
   display: flex;
 }
 
