@@ -13,17 +13,18 @@ body {
 .main {
   text-align: center;
   width: 80vw;
-  /* overflow: scroll; */
   margin: auto;
   width: 100%;
 }
+
+
 header {
   position: sticky;
   top: 0;
   height: 20px;
 }
 
-header #branding {
+header .branding {
   height: 40px;
   width: 100%;
   background-color: aliceblue;
@@ -40,28 +41,7 @@ header #branding {
   margin-bottom: 50px;
 }
 
-.navigation {
-  display: flex;
-  list-style: none;
-  padding-bottom: 10px;
-  border-bottom: 1px solid black;
-}
-.navigation li {
-  flex-grow: 1;
-  text-align: center;
-  font-size: 25px;
-}
-
-.navigation li a {
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.navigation li a:hover {
-  text-decoration: underline;
-}
-
+/* Showcase related styles */
 .showcase {
   min-height: 200px;
   background: url(../images/stickfigure.jpeg) no-repeat left bottom;
@@ -75,6 +55,8 @@ header #branding {
   font-size: 40px;
 }
 
+
+/* Port slider styles */
 .port-slider .container {
   display: flex;
 }
@@ -86,6 +68,8 @@ header #branding {
   font-size: 40px;
 }
 
+
+/* Project Related Styles */
 .project {
   margin: 20px;
   display: inline-block;
@@ -118,6 +102,8 @@ header #branding {
   text-decoration: underline;
 }
 
+
+/* Footer related Styles */
 footer {
   background-color: #238555;
   padding: 2px;
@@ -151,22 +137,8 @@ footer a {
 .none {
   display: none;
 }
-/*  */
-#about-ppl img {
-  height: 600px;
-  border: #ff0000 3px solid;
-  margin-top: 40px;
-}
 
-#about-ppl .container {
-  text-align: center;
-}
-
-#skilled {
-  text-align: center;
-  font-size: 100px;
-}
-
+/* Media queries to make the site mobile ready */
 @media only screen and (max-width: 800px) {
   body {
     margin: 0;
